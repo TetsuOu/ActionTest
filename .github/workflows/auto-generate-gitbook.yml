@@ -1,5 +1,5 @@
 name: auto-generate-gitbook
-on:                                 #在main分支上进行push时触发  Triggered when pushing on the main branch
+on:                                 #在main分支上进行push时触发  
   push:
     branches:
     - main
@@ -19,7 +19,7 @@ jobs:
       
     - name: configue gitbook
       run: |
-        npm install -g gitbook-cli
+        npm install -g gitbook-cli          
         gitbook install
         npm install -g gitbook-summary
                 
@@ -32,10 +32,9 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/${{github.repository}}
-        MYEMAIL: 1823636309@qq.com                  # 修改为自己邮箱   Modify to your own E-mail
+        MYEMAIL: 1823636309@qq.com                  # ！！记得修改为自己邮箱
         MYNAME: ${{github.repository_owner}}          
       run: |
-        echo ${{github.workspace}}
         cd _book
         git config --global user.email "${MYEMAIL}"
         git config --global user.name "${MYNAME}"
