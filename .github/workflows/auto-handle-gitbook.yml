@@ -33,18 +33,16 @@ jobs:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/wangzhebufangqi/ActionTest.git
         MYEMAIL: 1823636309@qq.com
-        MYNAME: ${{github.actor}}
+        MYNAME: ${{github.actor}}           #The login of the user that initiated the workflow run.
       run: |
-        echo $MYNAME
-        echo ${{github.run_id}}
-        echo ${{github.run_number}}
+        echo ${{github.workspace}}
         cd _book
         git config --global user.email "${MYEMAIL}"
         git config --global user.name "${MYNAME}"
         git init
         git remote add origin https://${REF}
         git add . 
-        git commit -m "Updated By Github Actions For Github Pages"
+        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
         git branch -M main
         git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
                 
