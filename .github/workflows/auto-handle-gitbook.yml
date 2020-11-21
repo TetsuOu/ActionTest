@@ -1,43 +1,43 @@
 name: auto-handle-gitbook
 on: 
+  push:
     branches:
-        -main
+    - main
 
 jobs:
-    main-to-gh-pages:
-        runs-on:
-        -ubuntu-latest
+  main-to-gh-pages:
+    runs-on: ubuntu-latest
         
-        steps:
-           -name:checkout main
-            uses:actions/checkout@v2
-            with:
-                ref:main
+    steps:
+    - name: checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: main
             
-           -name:set environment configuration
-            uses: actions/setup-node@v1
-            run: |
-                npm install -g gitbook-cli
-                gitbook install
-                npm install -g gitbook-summary
+    - name: set environment configuration
+      uses: actions/setup-node@v1
+      run: |
+        npm install -g gitbook-cli
+        gitbook install
+        npm install -g gitbook-summary
                 
-           -name:generate _book
-            run: |
-                book sm
-                gitbook build
+    - name: generate _book
+      run: |
+        book sm
+        gitbook build
                 
-           -name:push _book to gh-pages:
-            env:
-                TOKEN: ${{ secrets.TOKEN }}
-                REF: github.com/wangzhebufangqi/gitbookTest.git
-            run: |
-                cd _book
-                git init
-                git remote add origin https://${REF}
-                git add . 
-                git commit -m "Updated By Github Actions For Github Pages"
-                git branch -M main
-                git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
+    - name: push _book to gh-pages
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+        REF: github.com/wangzhebufangqi/gitbookTest.git
+      run: |
+        cd _book
+        git init
+        git remote add origin https://${REF}
+        git add . 
+        git commit -m "Updated By Github Actions For Github Pages"
+        git branch -M main
+        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
                 
                 
                 
