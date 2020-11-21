@@ -31,7 +31,7 @@ jobs:
     - name: push _book to gh-pages
       env:
         TOKEN: ${{ secrets.TOKEN }}
-        REF: github.com/wangzhebufangqi/gitbookTest.git
+        REF: github.com/wangzhebufangqi/ActionTest.git
       run: |
         cd _book
         git init
