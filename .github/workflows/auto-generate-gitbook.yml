@@ -1,5 +1,5 @@
-name: auto-handle-gitbook
-on: 
+name: auto-generate-gitbook
+on:                                 #在main分支上进行push时触发  Triggered when pushing on the main branch
   push:
     branches:
     - main
@@ -8,7 +8,7 @@ jobs:
   main-to-gh-pages:
     runs-on: ubuntu-latest
         
-    steps:
+    steps:                          
     - name: checkout main
       uses: actions/checkout@v2
       with:
@@ -23,17 +23,17 @@ jobs:
         gitbook install
         npm install -g gitbook-summary
                 
-    - name: generate _book
+    - name: generate _book folder
       run: |
         book sm
         gitbook build
                 
-    - name: push _book to gh-pages
+    - name: push _book to branch gh-pages 
       env:
         TOKEN: ${{ secrets.TOKEN }}
-        REF: github.com/wangzhebufangqi/ActionTest.git
-        MYEMAIL: 1823636309@qq.com
-        MYNAME: ${{github.actor}}           #The login of the user that initiated the workflow run.
+        REF: github.com/${{github.repository}}
+        MYEMAIL: 1823636309@qq.com                  # 修改为自己邮箱   Modify to your own E-mail
+        MYNAME: ${{github.repository_owner}}          
       run: |
         echo ${{github.workspace}}
         cd _book
