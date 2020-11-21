@@ -14,8 +14,10 @@ jobs:
       with:
         ref: main
             
-    - name: set environment configuration
+    - name: install nodejs
       uses: actions/setup-node@v1
+      
+    - name: configue gitbook
       run: |
         npm install -g gitbook-cli
         gitbook install
