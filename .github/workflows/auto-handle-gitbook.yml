@@ -32,10 +32,12 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/wangzhebufangqi/ActionTest.git
+        MYEMAIL: 1823636309@qq.com
+        MYNAME: wangzhebufangqi
       run: |
         cd _book
-        git config --global user.email "1823636309@qq.com"
-        git config --global user.name "wangzhebufangqi"
+        git config --global user.email "${MYEMAIL}"
+        git config --global user.name "${MYNAME}"
         git init
         git remote add origin https://${REF}
         git add . 
