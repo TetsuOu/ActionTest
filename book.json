@@ -52,7 +52,7 @@
             "shortName": "wangzhebufangqi"
         },
 		"ga": {
-            "token": "G-P2BRQPJ5BZ"
+            "token": "UA-253356848-3"
         }
 	},
 	"ignores" : ["_book", "node_modules"]
