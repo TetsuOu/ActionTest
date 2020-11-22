@@ -15,7 +15,11 @@
 		"donate",
 		"splitter"
 	],
-	"pluginConfig": {
+	"pluginsConfig": {
+		"editlink": {
+			"base": "https://github.com/wangzhebufangqi/ActionTest/blob/main/README.md",
+			"label": "Edit This Page"
+		},	
 		"github-buttons": {
 			"buttons": [{
 				"user": "wangzhebufangqi",
@@ -28,10 +32,6 @@
 				"width": "230",
 				"count": false
 			}]	
-		},	
-		"editlink": {
-			"base": "https://github.com/wangzhebufangqi/ActionTest/blob/main/README.md",
-			"label": "Edit This Page"
 		},	
 		"page-footer-ex": {
             "copyright": "[mrcode](https://github.com/wangzhebufangqi)",
