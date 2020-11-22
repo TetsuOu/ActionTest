@@ -30,9 +30,8 @@
 			}]	
 		},	
 		"editlink": {
-			"base": "github.com/wangzhebufangqi/ActionTest",
-			"label": "Edit This Page",
-			"multilingual": false
+			"base": "https://github.com/wangzhebufangqi/ActionTest/tree/main/",
+			"label": "Edit This Page"
 		},	
 		"page-footer-ex": {
             "copyright": "[mrcode](https://github.com/wangzhebufangqi)",
