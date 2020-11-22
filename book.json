@@ -1,5 +1,15 @@
 {
 	"title": "Summary",
-	"plugins" : [],
+	"plugins" : ["gittalk"],
+	"pluginConfig": {
+		"gittalk": {
+			"clientID": "b22c18f1b9eba38ab121",
+			"clientSecret": "12dc9b56f916bfcd12dd79d950895562ab262dd1",
+			"repo": "ActionTest",
+			"owner": "wangzhebufangqi",
+			"admin": "wangzhebufangqi",
+			"distractionFreeMode": "false"
+		}
+	},
 	"ignores" : ["_book", "node_modules"]
 }
