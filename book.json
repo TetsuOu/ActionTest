@@ -30,7 +30,7 @@
 			}]	
 		},	
 		"editlink": {
-			"base": "https://github.com/wangzhebufangqi/ActionTest/tree/main/",
+			"base": "https://github.com/wangzhebufangqi/ActionTest/blob/main/README.md",
 			"label": "Edit This Page"
 		},	
 		"page-footer-ex": {
