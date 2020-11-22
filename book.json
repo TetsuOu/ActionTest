@@ -56,8 +56,6 @@
             "token": "73be72a36cee8ef8daa9843c7861cecc"
         }
 	},
-	"ignores" : ["_book", "node_modules"],
-    "styles" : {
-        "website": "styles/web.css"
-    }
+	"ignores" : ["_book", "node_modules"]
+    
 }	
