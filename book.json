@@ -5,7 +5,6 @@
 		"github-buttons",
 		"editlink",
 		"copy-code-button",
-		"anchor-navigation-ex",
 		"page-footer-ex",
 		"prism", 
 		"-highlight",
@@ -17,7 +16,7 @@
 	],
 	"pluginsConfig": {
 		"editlink": {
-			"base": "https://github.com/wangzhebufangqi/ActionTest/blob/main/README.md",
+			"base": "https://github.com/wangzhebufangqi/ActionTest",
 			"label": "Edit This Page"
 		},	
 		"github-buttons": {
@@ -25,11 +24,11 @@
 				"user": "wangzhebufangqi",
 				"repo": "ActionTest",
 				"type": "star",
-				"size": "large"
+				"size": "small"
 			}, {
 				"user": "wangzhebufangqi",
 				"type": "follow",
-				"width": "230",
+				"size": "small",
 				"count": false
 			}]	
 		},	
