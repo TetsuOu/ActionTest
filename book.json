@@ -16,7 +16,7 @@
 		"donate",
 		"splitter",
 		"disqus",
-		"statistics"
+		"baidu-tongji-with-multiple-channel"
 	],
 	"pluginsConfig": {
 		"editlink": {
@@ -52,8 +52,8 @@
 		"disqus": {
             "shortName": "wangzhebufangqi"
         },
-		"statistics": {
-              "bd_token": "73be72a36cee8ef8daa9843c7861cecc"
+		"baidu-tongji-with-multiple-channel": {
+            "token": "73be72a36cee8ef8daa9843c7861cecc"
         }
 	},
 	"ignores" : ["_book", "node_modules"]
