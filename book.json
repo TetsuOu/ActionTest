@@ -12,7 +12,8 @@
 		"-search", 
 		"search-pro",
 		"donate",
-		"splitter"
+		"splitter",
+		"disqus"
 	],
 	"pluginsConfig": {
 		"editlink": {
@@ -49,7 +50,10 @@
 			"button": "Donate",
 			"alipayText": "支付宝捐赠",
 			"wechatText": "微信捐赠"
-		}	
+		},
+		"disqus": {
+            "shortName": "wangzhebufangqi"
+        }
 	},
 	"ignores" : ["_book", "node_modules"]
 }	
