@@ -30,7 +30,7 @@
 			}]	
 		},	
 		"editlink": {
-			"base": "https://github.com/wangzhebufangqi/ActionTest",
+			"base": "github.com/wangzhebufangqi/ActionTest",
 			"label": "Edit This Page",
 			"multilingual": false
 		},	
