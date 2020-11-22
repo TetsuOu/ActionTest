@@ -20,7 +20,7 @@
 	],
 	"pluginsConfig": {
 		"editlink": {
-			"base": "https://github.com/wangzhebufangqi/ActionTest",
+			"base": "https://github.com/wangzhebufangqi/ActionTest/blob/main",
 			"label": "Edit This Page"
 		},	
 		"github-buttons": {
@@ -53,7 +53,7 @@
             "shortName": "wangzhebufangqi"
         },
 		"baidu-tongji-with-multiple-channel": {
-            "token": "5273b2f99de3bc190886abb53f62267e"
+            "token": "73be72a36cee8ef8daa9843c7861cecc"
         }
 	},
 	"ignores" : ["_book", "node_modules"],
