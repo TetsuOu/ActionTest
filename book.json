@@ -57,5 +57,4 @@
         }
 	},
 	"ignores" : ["_book", "node_modules"]
-    
 }	
