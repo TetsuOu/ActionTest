@@ -1,15 +1,56 @@
 {
 	"title": "Summary",
-	"plugins" : ["gittalk"],
+	"plugins" : [
+		"toggle-chapters",
+		"github-buttons",
+		"editlink",
+		"copy-code-button",
+		"anchor-navigation-ex",
+		"page-footer-ex",
+		"prism", 
+		"-highlight",
+		"-lunr", 
+		"-search", 
+		"search-pro",
+		"donate",
+		"splitter"
+	],
 	"pluginConfig": {
-		"gittalk": {
-			"clientID": "b22c18f1b9eba38ab121",
-			"clientSecret": "12dc9b56f916bfcd12dd79d950895562ab262dd1",
-			"repo": "ActionTest",
-			"owner": "wangzhebufangqi",
-			"admin": "wangzhebufangqi",
-			"distractionFreeMode": "false"
-		}
-	},
+		"github-buttons": {
+			"buttons": [{
+				"user": "wangzhebufangqi",
+				"repo": "ActionTest",
+				"type": "star",
+				"size": "large"
+			}, {
+				"user": "wangzhebufangqi",
+				"type": "follow",
+				"width": "230",
+				"count": false
+		}]	
+	},	"editlink": {
+			"base": "https://github.com/wangzhebufangqi/ActionTest",
+			"label": "Edit This Page",
+			"multilingual": false
+	},	"page-footer-ex": {
+            "copyright": "[mrcode](https://github.com/wangzhebufangqi)",
+            "markdown": true,
+            "update_label": "<i>updated</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+    },	"prism": {
+			"css": ["prismjs/themes/prism-solarizedlight.css"],
+			"lang": {"flow": "typescript"}
+	},	"donate": {
+			"wechat": "https://gitee.com/wangzhebufangqi/PictureBed/raw/master/20201122131942.png",
+			"alipay": "https://gitee.com/wangzhebufangqi/PictureBed/raw/master/20201122131820.png",
+			"title": "",
+			"button": "Donate",
+			"alipayText": "支付宝捐赠",
+			"wechatText": "微信捐赠"
+    }
+	
+	
 	"ignores" : ["_book", "node_modules"]
-}
+	
+	}
+}	
